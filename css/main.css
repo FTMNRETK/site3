@@ -1,0 +1,895 @@
+/* GENEL Ayarlar */
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Regular.ttf');
+}
+
+body {
+	background: #eee;
+	color: #111;
+	font: 14px / 28px;
+	font-family: 'Raleway', arial;
+}
+
+h1 {
+	font-size: 52px ;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+}
+
+.bolumBaslik {
+	background: #550d16;
+	border-bottom: 6px solid #000;
+	height: 60px;
+	color: #fff;
+	display: inline-block;
+	line-height: 60px;
+	font-size: 24px;
+	padding: 5px 40px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+h3{
+	font-size: 16px;
+	color: #111;
+}
+
+.bolumAlani {
+	padding: 80px 0;
+}
+
+
+/* Sistem Ayarları */
+
+.konteyner {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.ortaOzellik .konteyner{
+	justify-content: space-between;
+}
+
+.motorOrta .konteyner {
+	justify-content: space-between;
+}
+
+.kol3 {
+	flex-grow: 1;
+	width: 33.33%;
+	
+}
+
+.kol2{
+	flex-grow: 1;
+	width: 50%;
+	padding: 20px;
+}
+
+/* Anasayfa Ayarları */
+
+header .logo {
+	margin-right: auto;
+}
+
+header .logo img {
+	display: block;
+	height: 40px;
+}
+
+.menu li {
+	float: left;
+	position: relative;
+}
+
+.menu li a {
+	padding: 30px 27px;
+	display: block;
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #111;
+	transition: all .5s ease;
+}
+
+.menu li:hover a{
+	background: #2f0000;
+	color: #fff;
+}
+
+.menu li ul{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+.menu li:hover ul{
+	display: block;
+	margin-top: 36px;
+}
+
+.menu li ul li:hover{
+	background-color: #f5f5f5;
+	color: #550d16;
+
+}
+
+#anaKaydirici {
+	height: 550px;
+	background: url('../img/arkaplan.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.kaydirici {
+	width: 100%;
+}
+
+#anaBaslik {
+	height: 550px;
+	background: rgba(0, 0, 0, .5);
+}
+
+.baslik{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	color: #fff;
+}
+
+.ustOzellik {
+	text-align: center;
+}
+
+.madde {
+	padding: 10px 20px;
+}
+
+.yakinlastirma {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.yakinlastirma img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all .5s ease;
+}
+
+.madde .maddeMesaj {
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #111;
+}
+
+.madde:hover .yakinlastirma img {
+	transform: scale(1.25);
+}
+
+.madde:hover h3 {
+	color: #fff;
+}
+
+.madde:hover .maddeMesaj {
+	background: #550d16;
+	color: #fff;
+	transition: all .5s ease;
+}
+
+.butonDetay {
+	color: #550d16;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #550d16;
+}
+
+.madde:hover .butonDetay {
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.maddeMesaj p {
+	margin: 20px 0;
+}
+
+#paralaks {
+	background: linear-gradient(
+			rgba(0,0,0, .5),
+			rgba(0,0,0,.5)),
+			url('../img/arkaplan2.jpg');		
+
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+
+}
+
+#paralaks p {
+	color: #fff;
+}
+
+.motorUst{
+	text-align: center;
+}
+
+.motorKonteyner{
+	position: relative;
+	width: 100%;
+}
+
+.resimUzeri{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.motorKaplama{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(80, 13, 22, .7);
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.motorKonteyner:hover .motorKaplama{
+	width: 100%;
+}
+
+.motorMesaj{
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.motorKaplama2{
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	background-color: rgba(80, 13, 22, .7);
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .5s ease;
+}
+
+.motorKonteyner:hover .motorKaplama2{
+	width: 100%;
+	left: 0;
+}
+
+
+footer{
+	background: #550d16;
+	text-align: center;
+}
+
+.altbilgiMadde{
+	padding: 57px;
+}
+
+.altbilgiMadde img{
+	height: 40px;
+	opacity: .7;
+	transition: all .5s ease;
+}
+
+.altbilgiMadde img:hover{
+	height: 45px;
+	transition: all .5s ease;
+}
+
+footer h3{
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+footer .fa{
+	font-size: 30px;
+	color: #95a5a6;
+	line-height: 50px;
+	transition: .3s ease;
+}
+
+footer .fa:hover{
+	color: 	#fff;
+}
+
+footer p{
+	color: #95a5a6;
+	line-height: 20px;
+}
+
+footer{
+	color: #95a5a6;
+	line-height: 20px;
+}
+
+.altbilgiLink a{
+	text-decoration: none;
+	color: #95a5a6;
+	letter-spacing: 2px;
+	transition: .3s ease;
+}
+
+.altbilgiLink a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.sosyalLink li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+/* Araba Ayarları */
+
+#arabaKaydirici {
+	height: 400px;
+	background: url('../img/arkaplan3.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#arabaBaslik {
+	height: 400px;
+	background: rgba(0, 0, 0, .7);
+}
+
+#inceleme{
+	background-color: #f5f5f5;
+}
+
+.incelemeUst{
+	text-align: center;
+}
+
+.incelemeOrta .kol2{
+	display: flex;
+}
+
+.incelemeResim{
+	width: 40%;
+}
+
+.incelemeResim img{
+	width: 100%;
+	height: auto;
+}
+
+.incelemeMesaj{
+	width: 60%;
+	padding-left: 20px;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 25px;
+}
+
+.tarih{
+	color: #333;
+	font-size: 13px ;
+	font-style: italic;
+}
+
+h4{
+	color: #550d16;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.incelemeMesaj a{
+	float: right;
+	text-decoration: none;
+	color: #550d16;
+}
+
+.incelemeMesaj a:hover{
+	text-decoration: underline;
+}
+
+.projeUst{
+	text-align: center;
+}
+
+#proje .konteynerDegisken{
+	height: 550px;
+	background: url('../img/arkaplan4.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.baslikP{
+	display: flex;
+	background: rgba(0, 0, 0, .8);
+	width: 100%;
+	height: 550px;
+}
+
+.projeBilgi{
+	position: relative;
+	top: 45%;
+	left: 10%;
+	transform: translate(-50px,-50px);
+}
+
+.projeBaslik{
+	font-size: 36px;
+	letter-spacing: 4px;
+	margin-bottom: 30px;
+}
+
+.projeButon{
+	background-color: #550d16;
+	cursor: pointer;
+	color: #fff;
+	padding: 20px 40px;
+	border: none;
+	margin-top: 30px;
+	transition: all .5s ease;
+}
+
+.projeButon:hover{
+	background-color: #fff;
+	color: #550d16;
+}
+
+.projeMesaj{
+	color: #fff;
+}
+
+
+/* Hakkında Ayarları */
+
+#hakkindaKaydirici {
+	height: 400px;
+	background: url('../img/arkaplan5.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#hakkindaBaslik {
+	height: 400px;
+	background: rgba(0, 0, 0, .7);
+}
+
+#hikaye{
+	background-color: #f5f5f5;
+}
+
+.hikayeUst{
+	text-align: center;
+}
+
+.hikayeOrta .konteynerDegisken{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.hikayeOrta .kol2{
+	display: flex;
+}
+
+.hikayeTarih{
+	flex: 1;
+	text-align: center;
+	background-color: #550d16;
+	color: #fff;
+}
+
+.hikayeTarih p{
+	font-size: 30px;
+	letter-spacing: 2px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.hikayeResim{
+	flex: 2;
+}
+
+.hikayeResim img{
+	width: 100%;
+	height: 100%;
+}
+
+.hikayeMesaj{
+	flex: 3;
+	margin-left: 10px;
+}
+
+.hikayeMesaj p{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	line-height: 25px;
+}
+
+.takımUst{
+	text-align: center;
+}
+
+.takımOrta .konteynerDegisken{
+	display: flex;
+	width: 100%;
+}
+
+.takımUye{
+	position: relative;
+	width: 100%;
+}
+
+.takımUyeResim{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.takımUyeKaplama{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	background-color: #550d16;
+	transition: .5s ease;
+}
+
+.takımUye:hover .takımUyeKaplama{
+	opacity: 0;
+}
+
+.takımUye:hover .takımUyeBilgi{
+	color: #fff;
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	letter-spacing: 2px;
+}
+
+.takımBaslik{
+	color: #fff;
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	letter-spacing: 3px;
+}
+
+.takımUyeBilgi{
+	color: #fff;
+	background-color: rgba(80, 13, 22, 0.7);
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .5s ease;
+	padding: 20px;
+	text-align: center;
+}
+
+
+/*İletişim Ayarları*/
+
+#iletisimKaydirici {
+	height: 400px;
+	background: url('../img/arkaplan6.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#iletisimBaslik {
+	height: 400px;
+	background: rgba(0, 0, 0, .7);
+}
+
+#galeri{
+	background-color: #f5f5f5;
+}
+
+.galeriUst{
+	text-align: center;
+	text-decoration: none;
+}
+
+.galeriKaydirici{
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.galeriKaydiriciMadde{
+	display: flex;
+	width: 300%;
+	position: relative;
+	left: 0;
+	animation: kaydiriciAnimasyon 20s infinite;
+}
+
+.galeriKaydiriciMadde img{
+	width: 20%;
+	float: left;
+	height: auto;
+}
+
+@keyframes kaydiriciAnimasyon{
+	0%{left: 0;}
+	20%{left: -100%;}
+	40%{left: -200%;}
+	60%{left: -200%;}
+	80%{left: -100%;}
+	100%{left: 0;}
+}
+
+.iletisimUst{
+	text-align: center;
+}
+
+.paket{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.iletisimForm{
+	margin: 0 auto ;
+	width: 60%;
+}
+
+.formMadde{
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.formSekil{
+	color: #fff;
+	float: left;
+	background-color: #550d16;
+	padding: 8px;
+	width: 8%;
+	text-align: center;
+}
+
+.formAlanı{
+	color: #fff;
+	background: #550d16;
+	border: none;
+	padding: 15.5px;
+	width: 92%;
+	display: block;
+	font-size: 14px;
+}
+
+.formButon{
+	display: block;
+	border: none;
+	background-color: #550d16;
+	color: #fff;
+	padding: 12px 25px;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+	transition: .5s ease;
+}
+
+.formButon:hover{
+	background-color: #841916;
+}
+
+/*Charger Ayarları*/
+
+#chargerKaydirici {
+	height: 400px;
+	background: url('../img/arkaplan8.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#chargerBaslik {
+	height: 400px;
+	background: rgba(0, 0, 0, .7);
+}
+
+#charger{
+	background-color: #f5f5f5;
+}
+
+.chargerUst{
+	text-align: center;
+}
+
+#paralaksCharger{
+	background: linear-gradient(
+			rgba(0,0,0, .5),
+			rgba(0,0,0,.5)),
+			url('../img/arkaplan7.jpg');		
+
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	height: 150px;
+
+}
+
+#paralaksCharger p {
+	font-size: 20px;
+	color: #fff;
+}
+
+
+/*CHALLENGER Ayarları*/
+
+#challengerKaydirici {
+	height: 400px;
+	background: url('../img/arkaplan3.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#challengerBaslik {
+	height: 400px;
+	background: rgba(0, 0, 0, .7);
+}
+
+#challenger{
+	background-color: #f5f5f5;
+}
+
+.challengerUst{
+	text-align: center;
+}
+
+#paralaksChallenger{
+	background: linear-gradient(
+			rgba(0,0,0, .5),
+			rgba(0,0,0,.5)),
+			url('../img/arkaplan9.jpg');		
+
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	height: 150px;
+
+}
+
+#paralaksChallenger p {
+	font-size: 20px;
+	color: #fff;
+}
+
+/*Durango Ayarları*/
+
+#durangoKaydirici {
+	height: 400px;
+	background: url('../img/arkaplan10.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#durangoBaslik {
+	height: 400px;
+	background: rgba(0, 0, 0, .7);
+}
+
+#durango{
+	background-color: #f5f5f5;
+}
+
+.durangoUst{
+	text-align: center;
+}
+
+#paralaksDurango{
+	background: linear-gradient(
+			rgba(0,0,0, .5),
+			rgba(0,0,0,.5)),
+			url('../img/arkaplan11.jpg');		
+
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	height: 150px;
+
+}
+
+#paralaksDurango p {
+	font-size: 20px;
+	color: #fff;
+}
+
+
+/*Viper Ayarları*/
+
+#viperKaydirici {
+	height: 400px;
+	background: url('../img/arkaplan12.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+#viperBaslik {
+	height: 400px;
+	background: rgba(0, 0, 0, .7);
+}
+
+#viper{
+	background-color: #f5f5f5;
+}
+
+.viperUst{
+	text-align: center;
+}
+
+#paralaksViper{
+	background: linear-gradient(
+			rgba(0,0,0, .5),
+			rgba(0,0,0,.5)),
+			url('../img/arkaplan13.jpg');		
+
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	height: 150px;
+
+}
+
+#paralaksViper p {
+	font-size: 20px;
+	color: #fff;
+}
+
+a:link {
+    color: green;    
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
